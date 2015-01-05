@@ -3,12 +3,14 @@ def BinarySearch(a,b):
     return -1
   maxIndex = len(b)
   minIndex = 0
+  middleIndex = maxIndex/2
   while(maxIndex > minIndex ):
-    middleIndex = maxIndex/2
     if(a == b[middleIndex]):
       return middleIndex
-    middleIndex =((maxIndex -middleIndex) /2)+middleIndex 
+    if(a > b[middleIndex]):
+      middleIndex =((maxIndex -middleIndex) /2)+middleIndex
     if(a == b[middleIndex]):
       return middleIndex
     maxIndex = middleIndex
+    middleIndex = maxIndex/2
   return -1
