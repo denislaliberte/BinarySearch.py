@@ -26,4 +26,5 @@ class BinarySearch_test(unittest.TestCase):
 
   def test_item_is_in_the_second_half(self):
     self.assertEqual(BinarySearch(7,[1,3,5,7,9]),3)
+    self.assertEqual(BinarySearch(7,[1,3,5,7]),3)
     self.assertEqual(BinarySearch(9,[1,3,5,7,9]),4)
