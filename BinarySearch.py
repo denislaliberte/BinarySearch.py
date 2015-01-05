@@ -1,5 +1,6 @@
 def BinarySearch(a,b):
-  middleIndex = len(b)/2
+  maxIndex = len(b)
+  middleIndex = maxIndex/2
   if not b:
     return -1
   if(a == b[middleIndex]):
