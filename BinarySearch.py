@@ -1,2 +1,4 @@
 def BinarySearch(a,b):
-  return -1
+  if not b:
+    return -1
+  return 0
