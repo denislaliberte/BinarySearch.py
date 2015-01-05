@@ -8,4 +8,8 @@ def BinarySearch(a,b):
   middleIndex = middleIndex/2
   if(a == b[middleIndex]):
     return middleIndex
+  middleIndex =((maxIndex -middleIndex) /2)+middleIndex 
+  print middleIndex
+  if(a == b[middleIndex]):
+    return middleIndex
   return -1
