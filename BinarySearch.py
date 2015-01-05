@@ -5,4 +5,7 @@ def BinarySearch(a,b):
     return -1
   if(a == b[middleIndex]):
     return middleIndex
+  middleIndex = middleIndex/2
+  if(a == b[middleIndex]):
+    return middleIndex
   return -1
