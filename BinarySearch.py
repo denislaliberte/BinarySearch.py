@@ -2,7 +2,8 @@ def BinarySearch(a,b):
   if not b:
     return -1
   maxIndex = len(b)
-  while(maxIndex > 0 ):
+  minIndex = 0
+  while(maxIndex > minIndex ):
     middleIndex = maxIndex/2
     if(a == b[middleIndex]):
       return middleIndex
