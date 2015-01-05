@@ -17,6 +17,8 @@ class BinarySearch_test(unittest.TestCase):
   def test_item_in_the_first_half(self):
     self.assertEqual(BinarySearch(3,[1,3,5,7,9]),1)
     self.assertEqual(BinarySearch(3,[1,3,5,7,9,11,13]),1)
+    self.assertEqual(BinarySearch(5,[1,3,5,7,9,11,13]),2)
+    self.assertEqual(BinarySearch(3,[1,3,5,7]),1)
 
   def test_item_is_in_the_middle(self):
     self.assertEqual(BinarySearch(3,[1,3,5]),1)
